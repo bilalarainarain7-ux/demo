@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Card Design</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #e6e6e6;
+            font-family: Arial, sans-serif;
+        }
+
+        .atm-card {
+            width: 350px;
+            height: 220px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 80px auto;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .bank-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .chip {
+            width: 55px;
+            height: 40px;
+            background: gold;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .card-number {
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        .card-details span {
+            font-size: 10px;
+            opacity: 0.8;
+        }
+
+        .visa {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="atm-card">
+        <div class="bank-name">My Bank</div>
+
+        <div class="chip"></div>
+
+        <div class="card-number">
+            1234 5678 9012 3456
+        </div>
+
+        <div class="card-details">
+            <div>
+                <span>CARD HOLDER</span>
+                <p>JOHN DOE</p>
+            </div>
+
+            <div>
+                <span>VALID THRU</span>
+                <p>12/28</p>
+            </div>
+        </div>
+
+        <div class="visa">VISA</div>
+    </div>
+
+</body>
+</html>
